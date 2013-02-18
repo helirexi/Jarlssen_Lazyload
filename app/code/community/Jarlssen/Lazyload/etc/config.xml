@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+* 
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the GNU LESSER GENERAL PUBLIC LICENSE (LGPL 3.0)
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade to newer
+* versions in the future.
+*
+* @category   Jarlssen
+* @package    Jarlssen_Lazyload
+* @copyright  Copyright (c) 1996-2013 Jarlssen GmbH (http://www.jarlssen.com)
+* @contacts   raffaele.pannisco@jarlssen.de
+* @license    http://www.gnu.org/copyleft/lesser.html  GNU LESSER GENERAL PUBLIC LICENSE (LGPL 3.0)
+*/ 
+-->
+<config>
+    <modules>
+        <Jarlssen_Lazyload>
+            <version>1.0.0</version>
+        </Jarlssen_Lazyload>
+    </modules>
+    <global>       
+        <helpers>
+            <lazyload>
+                <class>Jarlssen_Lazyload_Helper</class>
+            </lazyload>
+        </helpers>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <lazyload>
+                    <file>jarlssen/lazyload.xml</file>
+                </lazyload>
+            </updates>
+        </layout>
+    </frontend>
+    <default>
+        <lazyload>
+            <general>
+                <enabled>1</enabled>
+            </general>
+        </lazyload>
+    </default>
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <lazyload>
+                                            <title>Lazyload Library</title>
+                                        </lazyload>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+</config>

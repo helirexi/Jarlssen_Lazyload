@@ -1,0 +1,8 @@
+/*
+use this to customize lazyload related style
+*/
+.catalog-category-view .page .col-main .category-products .products-grid li a.product-image {
+    background-image: url('../../../images/opc-ajax-loader.gif');
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
